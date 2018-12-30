@@ -18,6 +18,7 @@ http://www.chmistry.nl/financien/beginnen-met-boekhouden-in-gnucash/
 Usage - command line:
 ---------------------
 ::
+
     usage: ing2ofx [-h] [-s, --split] [-o, --outfile OUTFILE]
                    [-d, --directory DIR]
                    csvfile
@@ -46,6 +47,7 @@ each import, so doing all at once is a lot of manual assigning.
 
 
 ::
+
    Transactions: 21
    Input:        NL99INGB0001234567_01-11-2018_31-11-2018.csv
    Output(s):    ofx/NL99INGB0001234567_01-11-2018_31-11-2018.ofx
