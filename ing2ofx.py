@@ -90,7 +90,7 @@ def make_unique_id(accountto, dtposted, time, trnamt, idslist):
 def read_csv_file(filename, split_by_month):
     transactions = defaultdict(list)
 
-    with open(filename, 'rb') as csvfile:
+    with open(filename, 'r') as csvfile:
         # Open the csvfile as a Dictreader
         csvreader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
 
@@ -279,9 +279,9 @@ def main():
             write_ofx_file(transactions[month], ofxfile)
 
     # print some statistics:
-    print "Transactions: " + str(sum(len(t) for t in transactions.values()))
-    print "Input:        " + args.csvfile
-    print "Output(s):    " + ",".join(output_files)
+    print("Transactions: " + str(sum(len(t) for t in transactions.values())))
+    print("Input:        " + args.csvfile)
+    print("Output(s):    " + ",".join(output_files))
 
 
 if __name__ == "__main__":
